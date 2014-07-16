@@ -12,16 +12,9 @@ class Extrospector {
 	use \Chevron\Introspector\Traits\IntrospectorTrait;
 
 	/**
-	 * the object to inspect
-	 */
-	protected $that;
-
-	/**
-	 * @param mixed $obj The object to inspect
 	 * @param bool $deep Toggle how deep to inspect
 	 */
-	function __construct($obj, $deep = false){
-		$this->that = $obj;
+	function __construct($deep = false){
 		$this->setDeep($deep);
 	}
 
@@ -32,9 +25,10 @@ class Extrospector {
 
 	/**
 	 * tirgger the inspection of the previously supplied object
+	 * @param mixed $obj The object to inspect
 	 */
-	public function extrospect(){
-		return $this->_parseObject($this->that);
+	public function extrospect($obj){
+		return $this->_parseObject($obj);
 	}
 
 }

@@ -6,9 +6,9 @@ class ExtrospectionTest extends PHPUnit_Framework_TestCase {
 
 		$obj = new ExtrospectorStub;
 
-		$ex = new Chevron\Introspector\Extrospector($obj);
+		$ex = new Chevron\Introspector\Extrospector();
 
-		$result = $ex->extrospect();
+		$result = $ex->extrospect($obj);
 
 		$expected = [
 			"mouse" => "mice",

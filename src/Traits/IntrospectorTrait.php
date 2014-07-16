@@ -65,7 +65,7 @@ trait IntrospectorTrait {
 
 	/**
 	 * handle an array value
-	 * @param scalar $val the value to handle
+	 * @param array $val the value to handle
 	 */
 	protected function _parseArray(array $val){
 		$final = [];
@@ -77,7 +77,7 @@ trait IntrospectorTrait {
 
 	/**
 	 * handle a object value
-	 * @param scalar $val the value to handle
+	 * @param object $val the value to handle
 	 */
 	protected function _parseObject($val){
 		$obj = new \ReflectionClass($val);
@@ -92,7 +92,7 @@ trait IntrospectorTrait {
 
 	/**
 	 * handle a resource value
-	 * @param scalar $val the value to handle
+	 * @param resource $val the value to handle
 	 */
 	protected function _parseResource($val){
 		return get_resource_type($val);
@@ -100,7 +100,7 @@ trait IntrospectorTrait {
 
 	/**
 	 * handle a value not already handled
-	 * @param scalar $val the value to handle
+	 * @param mixed $val the value to handle
 	 */
 	protected function _parseOther($val){
 		return gettype($val);

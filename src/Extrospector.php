@@ -25,7 +25,7 @@ class Extrospector {
 
 	/**
 	 * tirgger the inspection of the previously supplied object
-	 * @param mixed $obj The object to inspect
+	 * @param object $obj The object to inspect
 	 */
 	public function extrospect($obj){
 		if(!is_object($obj)){

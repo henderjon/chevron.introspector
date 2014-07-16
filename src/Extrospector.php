@@ -28,6 +28,9 @@ class Extrospector {
 	 * @param mixed $obj The object to inspect
 	 */
 	public function extrospect($obj){
+		if(!is_object($obj)){
+			throw new \Exception("Only instantiated objects can be extrospected.");
+		}
 		return $this->_parseObject($obj);
 	}
 

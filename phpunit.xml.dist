@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit bootstrap="tests/bootstrap.php" backupGlobals="false">
+<phpunit bootstrap="tests/PHPUnit/bootstrap.php">
 	<testsuites>
 		<testsuite name="Library">
-			<directory>tests</directory>
+			<directory>tests/PHPUnit</directory>
 		</testsuite>
     </testsuites>
     <logging>

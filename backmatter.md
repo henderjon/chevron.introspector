@@ -15,6 +15,10 @@
 
 [![Build Status](https://travis-ci.org/henderjon/chevron.introspector.svg?branch=master)](https://travis-ci.org/henderjon/chevron.introspector)
 
+#### hhvm
+
+[![HHVM Status](http://hhvm.h4cc.de/badge/henderjon/chevron-introspector.png)](http://hhvm.h4cc.de/package/henderjon/chevron-introspector)
+
 #### scruitinizer-ci
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/henderjon/chevron.introspector/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/henderjon/chevron.introspector/?branch=master)
